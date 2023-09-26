@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tela de Login</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Tela de Login</h1>
+    </header>
+
+    <main>
+        <section class="login-section">
+            <h2>Login</h2>
+            <form id="loginForm">
+                <label for="username">Nome de Usuário:</label>
+                <input type="text" id="username" required>
+
+                <label for="password">Senha:</label>
+                <input type="password" id="password" required>
+
+                <button type="submit">Entrar</button>
+            </form>
+        </section>
+
+        <section class="activity-section" style="display: none;">
+            <h2>Enviar Atividade</h2>
+            <form id="activityForm" enctype="multipart/form-data">
+                <label for="studentName">Nome do Aluno:</label>
+                <input type="text" id="studentName" required>
+
+                <label for="teacherName">Nome do Professor:</label>
+                <input type="text" id="teacherName" required>
+
+                <label for="subjectName">Nome da Disciplina:</label>
+                <input type="text" id="subjectName" required>
+
+                <label for="dueDate">Data de Entrega:</label>
+                <input type="date" id="dueDate" required>
+
+                <label for="activityFile">Anexar Atividade:</label>
+                <input type="file" id="activityFile" accept=".pdf, .docx" required>
+
+                <button type="submit">Enviar Atividade</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Tela de Login</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
